@@ -1,0 +1,81 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center everything */
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator container */
+.calculator {
+    width: 320px;
+}
+
+/* Display */
+.display {
+    background-color: #000;
+    color: #fff;
+    font-size: 60px;
+    text-align: right;
+    padding: 20px;
+    user-select: none;
+}
+
+/* Buttons grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 10px;
+}
+
+/* Common button style */
+.btn {
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease;
+}
+
+/* Zero button wide */
+.btn.zero {
+    grid-column: span 2;
+    border-radius: 40px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+/* Light buttons */
+.light {
+    background-color: #a5a5a5;
+    color: #000;
+}
+
+/* Dark number buttons */
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Operator buttons */
+.operator {
+    background-color: #ff9f0a;
+    color: #fff;
+}
+
+/* Button hover effect */
+.btn:hover {
+    filter: brightness(1.2);
+}
